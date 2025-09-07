@@ -139,7 +139,7 @@ const confirmPoisonBlockchain = async () => {
   setShowPoisonModal(false);
 
   try {
-    const res = await fetch("http://localhost:8000/api/poison_blockchain", {
+    const res = await fetch("https://npzvnlp7-8000.inc1.devtunnels.ms/api/poison_blockchain", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
