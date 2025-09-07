@@ -90,7 +90,7 @@ const GooglePhotosAITool = () => {
       const formData = new FormData()
       uploadedImages.forEach(img => formData.append('images', img.file))
 
-      const response = await axios.post('http://127.0.0.1:8000/api/upload/', formData, {
+      const response = await axios.post('https://npzvnlp7-8000.inc1.devtunnels.ms/api/upload/', formData, {
         headers: { 'Content-Type': 'multipart/form-data' },
       })
 
